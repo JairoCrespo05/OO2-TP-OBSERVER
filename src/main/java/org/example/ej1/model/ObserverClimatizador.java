@@ -13,7 +13,6 @@ public class ObserverClimatizador extends Observer{
     @Override
     public void update(String temperatura) {
         double grados = Double.parseDouble(temperatura.substring(0, temperatura.length() - 3));
-//        System.out.println(grados);
 
         if (grados < 12){
             System.out.println(HACE_FRIO);
@@ -26,8 +25,4 @@ public class ObserverClimatizador extends Observer{
     }
 
 
-    @Override
-    protected void hola() {
-        System.out.println("hola");
-    }
 }
