@@ -16,7 +16,8 @@ public class Main {
             public void run() {
                 try {
 
-                    NewParticipante api = new AgregarParticipante(new MailMessenger());
+                    AgregarParticipante api = new AgregarParticipante();
+                    api.agregarObservador(new MailMessenger());
                     VentanaAgregarParticipante frame = new VentanaAgregarParticipante(api);
 
                     frame.setVisible(true);

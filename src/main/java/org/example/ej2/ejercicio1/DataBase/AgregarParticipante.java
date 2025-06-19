@@ -9,10 +9,10 @@ import java.sql.SQLException;
 public class AgregarParticipante extends Sujeto {
 
     private ConectionDataBase DB;
-    private ServicioEmail servicioEmail;
 
-    public AgregarParticipante(ServicioEmail servicioEmail) throws SQLException {
-        this.servicioEmail = servicioEmail;
+
+    public AgregarParticipante() throws SQLException {
+
         this.DB = new ConectionDataBase();
     }
 
