@@ -1,4 +1,4 @@
-package org.example;
+package org.example.ej1.main;
 
 import org.example.ej1.model.*;
 
