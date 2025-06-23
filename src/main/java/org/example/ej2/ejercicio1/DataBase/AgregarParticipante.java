@@ -21,9 +21,8 @@ public class AgregarParticipante extends Sujeto {
     public void crearNuevoParticipante(String nombre, String telefono, String region, String email) throws SQLException {
 
         Participante participante = new Participante(nombre, telefono, region, email);
-        notificar(email);
         this.DB.insertarNuevoParticipante(participante);
-
+        notificar(email);
 
     }
 

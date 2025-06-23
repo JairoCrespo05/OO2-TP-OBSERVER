@@ -14,12 +14,16 @@ public class MailMessenger implements ServicioEmail {
     private static final String USER = "b87e2abe360271";
     private static final String PASSWORD = "1e149bd54796d7";
 
+    public MailMessenger(){
+
+    }
+
     @Override
     public void update(String email) {
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.starttlss.enable", "true");
+        props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", HOST);
         props.put("mail.smtp.port", PORT);
 
